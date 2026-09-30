@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/splash_gradient">
+
+    <ImageView
+        android:id="@+id/imgClinicLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:contentDescription="Clinic Logo"/>
+
+    <TextView
+        android:id="@+id/txtClinicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GentleTouch"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtClinicSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dental Clinic"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtAdminName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Administrator"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

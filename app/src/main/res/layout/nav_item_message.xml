@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingEnd="12dp">
+
+    <TextView
+        android:id="@+id/txtMessageBadge"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_appointment_badge"
+        android:visibility="gone"/>
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GentleTouchDentalClinic">
+        <receiver
+            android:name=".AppointmentReminderReceiver"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".PatientDashboardActivity">
+        </activity>
+        <activity android:name=".DoctorDashboardActivity">
+        </activity>
+        <activity android:name=".AdminDashboardActivity">
+        </activity>
+        <activity android:name=".EditDoctorActivity">
+        </activity>
+        <activity android:name=".AddDoctorActivity">
+        </activity>
+        <activity android:name=".DoctorProfileActivity">
+        </activity>
+        <activity android:name=".EditStaffActivity">
+        </activity>
+        <activity android:name=".AddStaffActivity">
+        </activity>
+        <activity android:name=".AppointmentActivity">
+        </activity>
+        <activity android:name=".PatientAppointmentDetailActivity">
+        </activity>
+        <activity android:name=".PatientAppointmentsActivity">
+        </activity>
+        <activity android:name=".PatientProfileActivity">
+        </activity>
+        <activity android:name=".DoctorNotificationsActivity">
+        </activity>
+        <activity android:name=".PatientMessagesActivity">
+        </activity>
+        <activity android:name=".PatientChatActivity">
+        </activity>
+        <activity android:name=".DoctorChatActivity">
+        </activity>
+        <activity android:name=".AdminDoctorChatActivity">
+        </activity>
+        <activity android:name=".DoctorAdminChatActivity">
+        </activity>
+    </application>
+
+</manifest>

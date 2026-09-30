@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GentleTouch Dental Clinic</string>
+
+    <string name="title">Dental Clinic Appointment</string>
+
+    <string name="subtitle">
+        Book your dental appointment easily and quickly.
+    </string>
+
+    <string name="start">Get Started</string>
+
+</resources>

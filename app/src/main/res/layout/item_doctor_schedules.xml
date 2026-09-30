@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+
+            android:id="@+id/txtDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#CCCCCC"/>
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Duty Time"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/txtMondayDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:padding="3dp"/>
+
+                <TextView
+
+                    android:id="@+id/txtMondayTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/txtTuesdayDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:padding="3dp"/>
+
+                <TextView
+
+                    android:id="@+id/txtTuesdayTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/txtWednesdayDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:padding="3dp"/>
+
+                <TextView
+
+                    android:id="@+id/txtWednesdayTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/txtThursdayDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"
+                    android:padding="3dp"/>
+
+                <TextView
+
+                    android:id="@+id/txtThursdayTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/txtFridayDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:padding="3dp"/>
+
+                <TextView
+
+                    android:id="@+id/txtFridayTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/txtSaturdayDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:padding="3dp"/>
+
+                <TextView
+
+                    android:id="@+id/txtSaturdayTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btnEditSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_gradient"
+            android:text="Edit Schedule"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

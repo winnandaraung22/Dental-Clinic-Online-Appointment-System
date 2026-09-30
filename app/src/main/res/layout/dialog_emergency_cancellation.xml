@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The selected appointments will be cancelled and the affected patients will be notified."
+        android:textColor="#475569"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/radioEmergencyCancellationReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <RadioButton
+            android:id="@+id/radioDoctorEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dentist emergency case" />
+
+        <RadioButton
+            android:id="@+id/radioDentistUnavailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dentist unexpectedly unavailable" />
+
+        <RadioButton
+            android:id="@+id/radioClinicEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clinic emergency" />
+
+        <RadioButton
+            android:id="@+id/radioOtherEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other emergency reason" />
+
+    </RadioGroup>
+
+</LinearLayout>

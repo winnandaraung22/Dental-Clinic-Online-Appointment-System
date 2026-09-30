@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/layoutAdminPatientRow"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/patient_table_row_background">
+
+        <TextView
+            android:id="@+id/txtAdminPatientName"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/patient_table_cell_background"
+            android:text="Patient Name"
+            android:textColor="#0F172A"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/txtAdminPatientDoctor"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/patient_table_cell_background"
+            android:text="Dr. Smith"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/txtAdminPatientDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/patient_table_cell_background"
+            android:text="2026-08-10"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/txtAdminPatientTime"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/patient_table_cell_background"
+            android:text="10:00 AM"
+            android:textColor="#334155"
+            android:textSize="13sp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/txtAdminPatientType"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:background="@drawable/patient_table_cell_background"
+            android:text="Consultation"
+            android:textColor="#475569"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+</HorizontalScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Why is this appointment being cancelled?"
+        android:textColor="#0F172A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioCancellationReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioDoctorUnavailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor is unavailable"/>
+
+        <RadioButton
+            android:id="@+id/radioTimeUnavailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appointment time is no longer available"/>
+
+        <RadioButton
+            android:id="@+id/radioClinicScheduleChanged"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clinic schedule changed"/>
+
+        <RadioButton
+            android:id="@+id/radioDoctorRequested"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor requested cancellation"/>
+
+        <RadioButton
+            android:id="@+id/radioFullPatients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full the number of patients"/>
+
+        <RadioButton
+            android:id="@+id/radioOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other"/>
+
+    </RadioGroup>
+
+</LinearLayout>

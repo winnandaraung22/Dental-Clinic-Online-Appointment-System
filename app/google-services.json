@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792042019078",
+    "project_id": "gentletouch-dental-clinic",
+    "storage_bucket": "gentletouch-dental-clinic.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792042019078:android:c60b042508cb314e76e687",
+        "android_client_info": {
+          "package_name": "com.example.gentletouchdentalclinic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuF_3bVh_7ToemEmNJVXgwV07Kgk1o3VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

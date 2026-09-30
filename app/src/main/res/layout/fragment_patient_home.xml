@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured Doctors"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+
+            android:id="@+id/viewPagerDoctors"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="12dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:overScrollMode="never"/>
+
+        <TextView
+
+            android:id="@+id/txtCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerServices"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+        <TextView
+            android:id="@+id/txtAvailableDoctors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Today's Available Doctors"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/availableDoctorsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerAvailableDoctors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

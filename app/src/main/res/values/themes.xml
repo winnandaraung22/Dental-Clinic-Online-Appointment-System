@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.GentleTouchDentalClinic" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.GentleTouchDentalClinic" parent="Base.Theme.GentleTouchDentalClinic" />
+
+    <style name="ShapeAppearance.BottomRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">28dp</item>
+        <item name="cornerSizeBottomRight">28dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>
